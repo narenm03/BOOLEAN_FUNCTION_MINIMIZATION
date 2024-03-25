@@ -37,20 +37,28 @@ Hardware – PCs, Cyclone II , USB flasher
 
 Developed by:NARENDHARAN.M RegisterNumber:212223230134
 
-module boolean(A,B,C,D,F1); 
-input A,B,C,D; 
-output F1; 
-wire x1,x2,x3,x4,x5; 
-assign x1=(~A)&(~B)&(~C)&(~D); 
-assign x2=(A)&(~C)&(~D); 
-assign x3=(~B)&(C)&(~D); 
-assign x4=(~A)&(B)&(C)&(D); 
-assign x5=(B)&(~C)&(D); 
-assign F1=x1|x2|x3|x4|x5; 
+module booleanfunction(a,b,c,d,w,x,y,z,f1,f2);
+input a,b,c,d,w,x,y,z;
+output f1,f2;
+wire adash,bdash,cdash,ddash,ydash,p,q,r,s,t,u;
+not(adash,a);
+not(bdash,b);
+not(cdash,c);
+not(ddash,d);
+not(ydash,y);
+and(p,bdash,ddash);
+and(q,adash,b,d);
+and(r,a,b,cdash);
+or(f1,p,q,r);
+and G1(s,ydash,z);
+and G2(t,x,y);
+and G3(u,w,y);
+or G4(f2,s,t,u);
 endmodule
+
 ```
 
-![Screenshot 2024-03-18 102801](https://github.com/Hashwatha/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231431/652a2a6a-2275-4ce4-8205-426fb9d556e8)
+![image](https://github.com/narenm03/BOOLEAN_FUNCTION_MINIMIZATION/assets/152469427/a1b896fc-aa8e-4df2-94a2-353ac7969625)
 
 **RTL realization**
 
