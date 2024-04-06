@@ -67,7 +67,8 @@ endmodule
 
 **Output:**
 
-![Screenshot 2024-03-18 103758](https://github.com/Hashwatha/BOOLEAN_FUNCTION_MINIMIZATION/assets/150231431/97fff674-8fef-446c-9d38-449d3fb437a9)
+![image](https://github.com/narenm03/BOOLEAN_FUNCTION_MINIMIZATION/assets/152469427/02c6a945-a11b-4723-8a5f-b8f23a863afc)
+
 
 **Result:**
 
